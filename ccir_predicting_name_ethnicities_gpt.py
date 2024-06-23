@@ -13,8 +13,8 @@ Original file is located at
 import openai
 from tabulate import tabulate
 
-secret = 'secret'
-openai.api_key = secret
+
+openai.api_key = 'api_key'
 
 prompt = "Return a list in python of 5 companies."
 messages = [{"role": "user", "content": prompt}]
