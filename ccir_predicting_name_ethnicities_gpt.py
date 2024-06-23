@@ -11,7 +11,9 @@ Original file is located at
 # %pip install openai==0.27.0
 
 import openai
-secret = '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'
+from tabulate import tabulate
+
+secret = 'secret'
 openai.api_key = secret
 
 prompt = "Return a list in python of 5 companies."
@@ -329,11 +331,6 @@ for i in range(6):
     a[i][j],_ = pearsonr(ethnicity_dic[adj[i]], ethnicity_dic[adj[j]])
 
 a
-
-!pip install tabulate
-
-# import module
-from tabulate import tabulate
 
 
 
